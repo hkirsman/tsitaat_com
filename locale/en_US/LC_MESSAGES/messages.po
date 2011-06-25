@@ -1,0 +1,218 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tsitaadid\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-11-08 11:40+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Hannes Kirsman <hkirsman@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED KINGDOM\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: e:\\svn\\quotebook24.com\\trunk\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: index2.php:26
+#: index2.php:76
+#: index2.php:77
+#: index2.php:80
+#: index2.php:81
+msgid "Latest quotes"
+msgstr ""
+
+#: index2.php:27
+#: init.php:62
+msgid "QuoteBook24.com - Worlds best online quotebook"
+msgstr ""
+
+#: index2.php:40
+#: index2.php:41
+#: index2.php:44
+#: index2.php:45
+msgid "Quotations by Author"
+msgstr ""
+
+#: index2.php:48
+#: index2.php:52
+#: classes/detect_section.php:12
+msgid "quotes"
+msgstr ""
+
+#: index2.php:56
+#: index2.php:57
+#: index2.php:60
+#: index2.php:61
+#: index2.php:64
+#: classes/detect_section.php:28
+msgid "tags"
+msgstr ""
+
+#: index2.php:65
+msgid "Tag category"
+msgstr ""
+
+#: index2.php:68
+msgid "Top 100 quotes"
+msgstr ""
+
+#: index2.php:69
+msgid "Top 100"
+msgstr ""
+
+#: index2.php:72
+msgid "Top 100-200 quotes"
+msgstr ""
+
+#: index2.php:73
+msgid "Top 100-200"
+msgstr ""
+
+#: index2.php:84
+#: index2.php:85
+msgid "Quotation contributors"
+msgstr ""
+
+#: index2.php:96
+#, php-format
+msgid "Page load took %s seconds."
+msgstr ""
+
+#: init.php:63
+msgid "quote quotes world translations"
+msgstr ""
+
+#: init.php:69
+msgid "QuoteBook24.com is best online source for quotes and quote translations"
+msgstr ""
+
+#: init.php:71
+msgid "Next generation online quotationsbook"
+msgstr ""
+
+#: init.php:75
+msgid "Tags"
+msgstr ""
+
+#: init.php:76
+msgid "Authors"
+msgstr ""
+
+#: init.php:77
+msgid "Username"
+msgstr ""
+
+#: init.php:78
+msgid "Password"
+msgstr ""
+
+#: init.php:79
+msgid "stay_signed_in"
+msgstr ""
+
+#: init.php:80
+msgid "New here?"
+msgstr ""
+
+#: init.php:81
+msgid "User activity"
+msgstr ""
+
+#: init.php:82
+msgid "For nerds :)"
+msgstr ""
+
+#: classes/detect_section.php:13
+msgid "authors"
+msgstr ""
+
+#: classes/detect_section.php:40
+#: classes/menu.php:34
+msgid "top-100-quotes"
+msgstr ""
+
+#: classes/detect_section.php:42
+#: classes/menu.php:38
+msgid "top-100-200-quotes"
+msgstr ""
+
+#: classes/detect_section.php:46
+msgid "latest-quotes"
+msgstr ""
+
+#: classes/detect_section.php:57
+#: classes/menu.php:42
+msgid "contributors"
+msgstr ""
+
+#: classes/menu.php:41
+msgid "Contributors"
+msgstr ""
+
+#: classes/menu.php:45
+msgid "Forum"
+msgstr ""
+
+#: classes/menu.php:46
+msgid "forum"
+msgstr ""
+
+#: classes/menu.php:50
+msgid "http://twitter.com/quotebook24_com"
+msgstr ""
+
+#: classes/quote.php:205
+msgid "minute ago"
+msgstr ""
+
+#: classes/quote.php:209
+msgid "minutes ago"
+msgstr ""
+
+#: classes/quote.php:213
+#: classes/quote.php:217
+msgid "hours ago"
+msgstr ""
+
+#: classes/quote.php:282
+#: classes/quote.php:287
+msgid "BC"
+msgstr ""
+
+#: classes/quote.php:291
+msgid "AD"
+msgstr ""
+
+#: classes/quote.php:298
+#: classes/quote.php:306
+msgid "ca."
+msgstr ""
+
+#: classes/quote.php:336
+msgid "a"
+msgstr ""
+
+#: classes/quote.php:345
+msgid "an"
+msgstr ""
+
+#: classes/quote.php:358
+#: classes/quote.php:363
+msgid "was"
+msgstr ""
+
+#: classes/quote.php:367
+msgid "is"
+msgstr ""
+
+#~ msgid "Tsitaat.com - Eesti parim online tsitaadikogu"
+#~ msgstr "QuoteBook24.com - Worlds best online quotebook"
+#~ msgid "tsitaadid"
+#~ msgstr "quotes"
+#~ msgid "teemad"
+#~ msgstr "tags"
+#~ msgid "viimati-lisatud-tsitaadid"
+#~ msgstr "latest-quotes"
+

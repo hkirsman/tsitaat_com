@@ -1,0 +1,20 @@
+<?php echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="', $lang, '" lang="', $lang, '"  xmlns:fb="http://www.facebook.com/2008/fbml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+';     if(!$robots_index) { 
+echo '    <meta name="robots" content="noindex" />
+';     } 
+echo '    <meta name="description" content="', $description, '" />
+    <meta name="keywords" content="', $keywords, '" />
+    <link rel="stylesheet" type="text/css" href="', $baseurl_static, '/img/_style_screen_', $locale; if($compress_css) { echo '_compress.php'; } else { echo '.css'; } echo '" media="screen, projection, print" title="" />
+';     if($logged) { 
+echo '    <link rel="stylesheet" type="text/css" href="', $baseurl_static, '/img/jquery-ui.css" media="screen, projection, print" title="" />
+';     }     
+echo '    <link rel="shortcut icon" type="image/ico" href="', $baseurl_static, '/favicon.ico" />
+    <title>', $title, '</title>
+  </head>
+';
+ ?>

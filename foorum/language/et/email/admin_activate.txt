@@ -1,0 +1,14 @@
+Subject: Kasutaja konto aktiveerimine
+
+Tere,
+
+Konto "{USERNAME}" on deaktiveeritud või vastloodud, peaksid kontrollima andmeid (kui vaja) ja kasutama neid vastavalt.
+
+Kasuta seda linki, et minna kasutaja profiili:
+{U_USER_DETAILS}
+
+Kasuta seda linki, et aktiveerida konto:
+{U_ACTIVATE}
+
+
+{EMAIL_SIG}

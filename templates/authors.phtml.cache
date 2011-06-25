@@ -1,0 +1,11 @@
+<?php echo '<div class="authorlist">
+<div class="col">
+'; foreach ($authors_list as $author) { 
+echo '    <a href="', $baseurl, '/tsitaadid/autorid/', $author['url_friendly_author_name'], '">', $author['author_name'], '</a>
+';     if( $author['author_born_death']) { 
+echo '    (', $author['author_born_death'], ')
+'; } echo '<br />
+'; } 
+echo '</div>
+</div>';
+ ?>

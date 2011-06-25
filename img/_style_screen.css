@@ -1,0 +1,303 @@
+/** 
+  * site:     www.tsitaat.com
+  */
+
+/*****Reset*****/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td { border: 0;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+/* remember to define focus styles! */
+:focus { outline: 0; }
+/* remember to highlight inserts somehow! */
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse;	border-spacing: 0; }
+/*
+End Reset
+*/
+BODY { font: 14px/20px Georgia,Verdana,Helvetica,sans-serif; color: #484848; margin: 30px 0; }
+BUTTON, INPUT, TEXTAREA, SELECT { font: 14px/20px Georgia,Verdana,Helvetica,sans-serif;  }
+A { color: #006A80; text-decoration: underline; }
+
+H1 { display: none; }
+SPAN.h1 { 
+	color:#006A80;
+	display:block;
+	font-size:28px;
+	margin-bottom:20px;
+	font-weight: normal;
+	line-height: 28px;
+}
+span.h1 A  { text-decoration: none; }
+span.h1 A:hover { text-decoration: underline; }
+SPAN.h1 SPAN { font-size: 16px; font-weight: normal; display: block;  }
+
+.hidden { display: none; }
+.noUnderline { text-decoration: none !important; }
+.important { color: #ca2d06; }
+
+.header,
+.content,
+.footer { width: 950px; margin: 0 auto; overflow: hidden; }
+.header { height: 150px; position: relative; margin-bottom: 40px; }
+.header A.home {
+	display:block;
+	height:80px;
+	left:10px;
+	position:absolute;
+	top:0;
+	width:300px;
+}
+.slogan {
+	color:#CCCCCC;
+	font-size:16px;
+	left:10px;
+	position:absolute;
+	top:86px;
+}
+DIV.search { position: absolute; right: 10px; position:absolute; top:0px; }
+DIV.search input.text {
+	cursor: text;
+	font-family: Georgia,Verdana,Helvetica,sans-serif !important;
+	font-size: 14px;
+	margin-right: 1px;
+	padding: 0 3px;
+	width: 300px;
+	line-height: 20px;
+	height: 20px;
+}
+DIV.search input.submit { font-size: 14px; font-family: Georgia,Verdana,Helvetica,sans-serif !important; padding: 0 3px; }
+UL.mainNav { position: absolute; left: 10px; position:absolute; top:123px;}
+UL.mainNav * { float: left; }
+UL.mainNav LI { margin-right: 20px; }
+UL.mainNav A { text-decoration: none; font-family: Verdana; font-size: 12px; }
+UL.mainNav A:hover { text-decoration: underline; }
+.content { padding-left: 10px; margin-bottom: 40px; }
+.content .content { padding: 0; margin: 0; width: auto; } 
+.sideContent { float: left; width: 200px; padding-top: 15px; }
+.sideContent H3 { margin: 0 0 5px 0; }
+.extraSideContent { float: left; width: 210px; padding-top: 52px; }
+DIV.amazon_product { padding-bottom: 20px; }
+UL.index,
+DIV.login,
+DIV.newHere,
+DIV.recentUsers { margin-bottom: 30px; overflow: hidden; width: 190px; }
+UL.index * { float: left; }
+UL.index LI {
+	font-size:12px;
+	margin: 5px 0;
+}
+UL.index LI.title { float: none; font-weight: bold; margin: 0; padding-left: 5px;  }
+UL.index A {
+	display:block;
+	font-weight:bold;
+	margin-right:3px;
+	padding:4px;
+	text-align:center;
+	text-decoration:underline;
+	text-transform:uppercase;
+	width:17px;
+}
+UL.index A.sel {
+	background: none;
+	background: #3D8E9E;
+	color: white ! important; }
+UL.index A:hover {
+	background: #E9E9E9;
+	color: #006A80 ! important;
+}
+DIV.paypal { padding-bottom: 20px; padding-left: 20px; }
+.mainContent { float: left; width: 750px; position: relative; }
+.mainContent_w520 { width: 520px; }
+.mainContent_w560 { width: 560px; }
+.mainContent_w940 { width: 940px; }
+DIV.quote { overflow: hidden; margin-bottom: 20px; }
+DIV.quote P.quote A { text-decoration: none; color: #484848; }
+DIV.quote P.quote A:hover { text-decoration: underline; }
+DIV.quote DIV.mainInfo,
+DIV.quote DIV.authorPhoto,
+DIV.quote DIV.quoteExtraInfo { float: left; overflow: hidden;  }
+DIV.quote DIV.mainInfo { width: 400px; padding-right: 20px; }
+DIV.quote A.author { display: block; font-weight: bold; }
+DIV.quote P.authorProfession { font-size: 10px; }
+DIV.quote P.quoteSource { text-align: right; font-style: italic; }
+DIV.quote P.quoteSource A { text-decoration: none; }
+DIV.quote P.quoteSource A:hover { text-decoration: underline; }
+DIV.quote DIV.authorPhoto { width: 100px; }
+DIV.quote DIV.authorPhoto SPAN { display: block; color: white; text-align: center; width: 90px; font-size: 10px; }
+DIV.quote DIV.authorPhotoHover SPAN { color: gray; }
+DIV.quote DIV.quoteExtraInfo { width: 210px; font-size: 11px; line-height: 16px; border-left:1px solid #CCC; padding-left: 10px;}
+DIV.quote A.vote { text-decoration: none; }
+DIV.googlead01 { border-bottom: 20px solid white; margin-top: -10px; }
+DIV.authorPhotoInfo { width: 500px; }
+DIV.authorPhotoInfo TABLE { width: 400px; float: left;  }
+DIV.authorPhotoInfo IMG { float: right;  }
+DIV.authorPhotoInfo TD { padding-top: 2px; padding-bottom: 2px; }
+DIV.authorPhotoInfo TD.caption { padding-right: 15px; }
+DIV.quote .quoteFirstChar { font-size: 28px; }
+UL.taglist,
+UL.authorlist { width: 510px; overflow: hidden; }
+UL.taglist LI,
+UL.authorlist LI { float: left; }
+UL.taglist LI { width: 170px; }
+UL.authorlist LI { width: 240px; }
+UL.authorlist SPAN.authorProfession { display: block; }
+DIV.popularTags { border: 1px solid #006A80; width: 200px; margin-bottom: 20px; }
+DIV.popularTags H2 { background: #006A80; padding: 5px 10px; color: white; }
+DIV.popularTags DIV.content { padding: 10px; }
+/* banners */
+.banner120_600 { float: right; margin-bottom: 20px; margin-right: 45px;}
+
+.login { width: 200px; }
+.login H3 {  }
+.login DIV.row { padding: 1px 0; }
+.login LABEL {  }
+.login INPUT.text { border: 1px solid #E1E1E1; padding: 3px; width: 154px }
+.login INPUT.submit { background-color:#F6F6F6;
+color:#000000;
+font-family:verdana,sans-serif;
+font-size:9pt; }
+.newHere A { display: block; }
+.newHere A.createAnAccount { margin: 10px 0 4px; }
+.newHere A.aboutUs {  }
+
+
+
+/*Navi*/
+.navi {
+	margin-bottom: 10px;
+	overflow: hidden;
+	width: 100%;
+}
+.navi span,
+.navi a {
+	*display: inline;
+	border: 1px solid #B6B6B6;
+	color: #808080;
+	display: -moz-inline-stack;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 20px;
+	margin: 0 2px 0 1px;
+	padding: 1px 7px;
+	zoom: 1;
+	text-decoration: none;
+	vertical-align: middle;
+}
+.navi a:hover { background-color: #dfdfdf; }
+.navi a.selected:hover,
+.navi a.selected {
+	background-color: #3D8E9E;
+	border: 1px solid #3D8E9E;
+	color: #FFF;
+	font-weight: bold;
+}
+.navi a.btn { color: #77932c; font-size: 11px; font-weight: bold; }
+.navi a.btn:hover {
+	background-color: transparent;
+	text-decoration: underline;
+}
+.navi a.prev { border: 0; }
+.navi a.next { border: 0; }
+
+/*
+Cols
+*/
+.col { float: left; }
+.col01 { width: 100px; }
+.col02 { width: 100px; }
+
+/* form */
+FORM.frm { font-size: 11px; }
+FORM.frm TD { padding: 1px 0; vertical-align:top; }
+FORM.frm TD.caption LABEL { font-weight: bold;  text-align: right; padding-right: 7px; display: block; }
+FORM.frm TEXTAREA {  font-size: 11px; background: white; padding: 3px; border: 1px solid #E1E1E1; width: 350px; height: 100px; }
+FORM.frm INPUT.text {  font-size: 11px; background: white; padding: 3px; border: 1px solid #E1E1E1; width: 350px; }
+FORM.frm INPUT.textHover,
+FORM.frm INPUT.textActive,
+FORM.frm TEXTAREA.textHover,
+FORM.frm TEXTAREA.textActive{ background: #F7F7F7; }
+DIV.buttons { padding-top: 10px; }
+DIV.buttons BUTTON {  font-size: 11px;  border: 1px solid #E1E1E1; padding: 3px 10px; font-size: 12px; background: #F0F0F0; cursor: pointer; }
+
+/* maby delete */
+.activate_quotes { overflow: auto; padding: 20px; }
+.activate_quotes H1 { display: block; font-size: 18px; padding-bottom: 18px; }
+.activate_quotes TABLE { table-layout: fixed;  }
+.activate_quotes TABLE TD.col { width: 230px; padding: 10px; }
+.activate_quotes TABLE TD.col .colcontainer { height: 450px; overflow: auto; }
+/*
+    ColorBox Core Style
+    The following rules are the styles that are consistant between themes.
+    Avoid changing this area to maintain compatability with future versions of ColorBox.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative; overflow:hidden;}
+#cboxLoadedContent{overflow:auto;}
+#cboxLoadedContent iframe{display:block; width:100%; height:100%; border:0;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+
+/* 
+    ColorBox example user style
+    The following rules are ordered and tabbed in a way that represents the
+    order/nesting of the generated HTML, so that the structure easier to understand.
+*/
+#cboxOverlay{background:#fff;}
+
+#colorBox{}
+    #cboxTopLeft{width:25px; height:25px; background:url(colorbox/border1.png) 0 0 no-repeat;}
+    #cboxTopCenter{height:25px; background:url(colorbox/border1.png) 0 -50px repeat-x;}
+    #cboxTopRight{width:25px; height:25px; background:url(colorbox/border1.png) -25px 0 no-repeat;}
+    #cboxBottomLeft{width:25px; height:25px; background:url(colorbox/border1.png) 0 -25px no-repeat;}
+    #cboxBottomCenter{height:25px; background:url(colorbox/border1.png) 0 -75px repeat-x;}
+    #cboxBottomRight{width:25px; height:25px; background:url(colorbox/border1.png) -25px -25px no-repeat;}
+    #cboxMiddleLeft{width:25px; background:url(colorbox/border2.png) 0 0 repeat-y;}
+    #cboxMiddleRight{width:25px; background:url(colorbox/border2.png) -25px 0 repeat-y;}
+    #cboxContent{background:#fff;}
+        #cboxLoadedContent{margin-bottom:20px;}
+        #cboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:#999;}
+        #cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999;}
+        #cboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
+        #cboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
+        #cboxNext{position:absolute; bottom:0px; left:63px; color:#444;}
+        #cboxLoadingOverlay{background:url(colorbox/loading.gif) 5px 5px no-repeat #fff;}
+        #cboxClose{position:absolute; bottom:0; right:0; display:block; color:#444;}
+
+/*
+    The following fixes png-transparency for IE6.  
+    It is also necessary for png-transparency in IE7 & IE8 to avoid 'black halos' with the fade transition
+    
+    Since this method does not support CSS background-positioning, it is incompatible with CSS sprites.
+    Colorbox preloads navigation hover classes to account for this.
+    
+    !! Important Note: AlphaImageLoader src paths are relative to the HTML document,
+    while regular CSS background images are relative to the CSS document.
+*/
+.cboxIE #cboxTopLeft{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=colorbox/internet_explorer/borderTopLeft.png, sizingMethod='scale');}
+.cboxIE #cboxTopCenter{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=colorbox/internet_explorer/borderTopCenter.png, sizingMethod='scale');}
+.cboxIE #cboxTopRight{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=colorbox/internet_explorer/borderTopRight.png, sizingMethod='scale');}
+.cboxIE #cboxBottomLeft{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=colorbox/internet_explorer/borderBottomLeft.png, sizingMethod='scale');}
+.cboxIE #cboxBottomCenter{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=colorbox/internet_explorer/borderBottomCenter.png, sizingMethod='scale');}
+.cboxIE #cboxBottomRight{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=colorbox/internet_explorer/borderBottomRight.png, sizingMethod='scale');}
+.cboxIE #cboxMiddleLeft{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=colorbox/internet_explorer/borderMiddleLeft.png, sizingMethod='scale');}
+.cboxIE #cboxMiddleRight{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=colorbox/internet_explorer/borderMiddleRight.png, sizingMethod='scale');}

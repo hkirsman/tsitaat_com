@@ -1,0 +1,19 @@
+<?php echo '<div class="taglist">
+'; $i = 0; 
+ $len = count($taglist); 
+ foreach ($taglist as $tag) { 
+   if($i==0) { 
+echo '  <div class="col col01">
+';   } 
+echo '    <a href="', $baseurl, '/tsitaadid/teemad/', $tag['tag_for_url'], '">', $tag['tag_for_user'], '</a><br />
+';   if(floor($len/2) == $i) { 
+echo '  </div>
+  <div class="col col01">
+';   } 
+   if($i==$len) { 
+echo '  </div>
+';   } 
+   $i++; 
+ } 
+echo '</div>';
+ ?>

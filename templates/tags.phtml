@@ -1,0 +1,18 @@
+<div class="taglist">
+<?php $i = 0; ?>
+<?php $len = count($taglist); ?>
+<?php foreach ($taglist as $tag) { ?>
+  <?php if($i==0) { ?>
+  <div class="col col01">
+  <?php } ?>
+    <a href="{==$baseurl=}/tsitaadid/teemad/{==$tag['tag_for_url']=}">{==$tag['tag_for_user']=}</a><br />
+  <?php if(floor($len/2) == $i) { ?>
+  </div>
+  <div class="col col01">
+  <?php } ?>
+  <?php if($i==$len) { ?>
+  </div>
+  <?php } ?>
+  <?php $i++; ?>
+<?php } ?>
+</div>

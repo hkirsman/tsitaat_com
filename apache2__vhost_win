@@ -1,0 +1,56 @@
+<VirtualHost *:80>
+ServerAlias localhost
+FileETag MTime Size
+DocumentRoot e:\svn\quotebook24.com\trunk
+#ErrorLog /www/dev/logs/dev.tsitaat.com/error_log
+#CustomLog /www/dev/logs/dev.tsitaat.com/access_log common
+
+AddCharset UTF-8 .utf8
+AddDefaultCharset UTF-8
+
+<Directory />
+AllowOverride All
+Options FollowSymLinks
+ExpiresActive on
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType text/javascript "access plus 1 month"
+ExpiresByType application/x-javascript "access plus 1 month"
+ExpiresByType text/css "access plus 1 month"
+Header append Vary "User-Agent"
+</Directory>
+
+RewriteEngine on
+Options +FollowSymLinks
+RewriteLogLevel 0
+#AcceptPathInfo On
+
+## add slash sufix to tag dirs
+RewriteCond %{REQUEST_URI} ^/quotes/tags/[a-z-]{1}$
+#RewriteCond %{REQUEST_URI} ^/tsitaadid/teemad/ä$ [OR]
+#RewriteCond %{REQUEST_URI} ^/tsitaadid/teemad/ö$ [OR]
+#RewriteCond %{REQUEST_URI} ^/tsitaadid/teemad/õ$ [OR]
+#RewriteCond %{REQUEST_URI} ^/tsitaadid/teemad/ü$
+RewriteRule ^.*/(.*)$ http://localhost/quotes/tags/$1/ [R=301,L]
+
+## add slash sufix to author dirs
+RewriteCond %{REQUEST_URI} ^/quotes/authors/[a-z-]{1}$
+#RewriteCond %{REQUEST_URI} ^/tsitaadid/autorid/ä$ [OR]
+#RewriteCond %{REQUEST_URI} ^/tsitaadid/autorid/ö$ [OR]
+#RewriteCond %{REQUEST_URI} ^/tsitaadid/autorid/õ$ [OR]
+#RewriteCond %{REQUEST_URI} ^/tsitaadid/autorid/ü$
+RewriteRule ^.*/(.*)$ http://localhost/quotes/authors/$1/ [R=301,L]
+
+## add slash sufix to pages dirs
+RewriteCond %{REQUEST_URI} ^/[0-9]+$
+RewriteRule ^([0-9]+)$ http://localhost/$1/ [R=301,L]
+
+## send to www.tsitaat.com if without prefix
+#RewriteCond %{HTTP_HOST} ^tsitaat.com   [NC]
+#RewriteRule ^(.*)$ http://www.tsitaat.com/$1 [L,R=301] 
+
+#RewriteCond e:\\svn\\quotebook24.com\\trunk\\%{REQUEST_FILENAME} !-d
+RewriteCond e:\\svn\\quotebook24.com\\trunk\\%{REQUEST_FILENAME} !-f 
+RewriteRule ^.* /index.php [L]
+</VirtualHost>

@@ -1,0 +1,20 @@
+Subject: Aktiveeri oma kasutaja "{SITENAME}" foorumites uuesti
+
+Foorumi administraator nõuab, et sa aktiveeriksid oma kasutaja uuesti. Sinu kasutaja pole hetkel aktiveeritud.
+Palun järgi juhiseid konto aktiveerimiseks.
+
+Palun hoia see e-kiri alles. Sinu kasutaja andmed on järgnevad:
+
+----------------------------
+Kasutajanimi: {USERNAME}
+Parool: {PASSWORD}
+----------------------------
+
+Sinu parool on meie andmebaasis krüpteeritud. Kui sa peaksid selle unustama, saad soovida uut parooli, mis aktiveeritakse nagu su kasutakontogi.
+
+Palun külasta järgnevat linki oma konto aktiveerimiseks:
+
+{U_ACTIVATE}
+
+
+{EMAIL_SIG}

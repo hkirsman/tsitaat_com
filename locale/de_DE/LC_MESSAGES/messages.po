@@ -1,0 +1,342 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tsitaadid\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-13 20:24+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Hannes Kirsman <hkirsman@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: c:\\www\\tsitaat.com\\htdocs_tsitaadid\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: index.php:55
+#: index2.php:46
+#: init.php:103
+#: init.php:141
+msgid "QuoteBook24.com - Worlds best online quotebook"
+msgstr "ZitateBuch24.de - Deutschlands bestes online Buch der Zitate"
+
+#: index.php:56
+#: index2.php:47
+msgid "Latest quotations"
+msgstr ""
+
+#: index.php:64
+#: index2.php:55
+#: classes/detect_section.php:84
+msgid "latest-quotes"
+msgstr ""
+
+#: index.php:78
+#: index.php:79
+#: index.php:82
+#: index.php:83
+#: index2.php:65
+#: index2.php:66
+#: index2.php:69
+#: index2.php:70
+msgid "Quotations by Author"
+msgstr ""
+
+#: index.php:97
+#: index.php:104
+#: index.php:107
+#: index.php:120
+#: index.php:124
+#: index.php:135
+#: index.php:142
+#: index.php:145
+#: index.php:164
+#: index.php:167
+#: index.php:194
+#: index.php:197
+#: index2.php:84
+#: index2.php:91
+#: index2.php:104
+#: index2.php:108
+#: index2.php:112
+#: index2.php:128
+#: init.php:126
+#: classes/detect_section.php:25
+msgid "quotes"
+msgstr "zitate"
+
+#: index.php:97
+#: index.php:120
+#: index.php:135
+#: index2.php:84
+#: index2.php:104
+#: init.php:127
+#: classes/detect_section.php:26
+msgid "authors"
+msgstr "autoren"
+
+#: index.php:109
+#: index.php:166
+#: index.php:195
+#: index.php:196
+#: index2.php:151
+msgid "quotations"
+msgstr "zitate"
+
+#: index.php:152
+#: index.php:153
+#: index2.php:116
+#: index2.php:117
+#: init.php:129
+#: classes/detect_section.php:46
+msgid "tags"
+msgstr "themen"
+
+#: index.php:157
+#: index.php:165
+#: index2.php:121
+#: index2.php:129
+msgid "Tag category"
+msgstr ""
+
+#: index.php:181
+#: index.php:182
+#: index2.php:139
+#: index2.php:140
+msgid "Source category:"
+msgstr ""
+
+#: index.php:205
+msgid "There is no such source."
+msgstr ""
+
+#: index.php:210
+#: index2.php:155
+msgid "Quotations, quotes by source"
+msgstr ""
+
+#: index.php:211
+#: index2.php:156
+msgid "Quotations by source"
+msgstr ""
+
+#: index.php:223
+#: index.php:226
+#: index2.php:159
+msgid "Top 100 quotes"
+msgstr "Top 100"
+
+#: index.php:224
+msgid "Best 100 quotations"
+msgstr ""
+
+#: index.php:225
+#: index2.php:160
+msgid "Top 100"
+msgstr "Top 100"
+
+#: index.php:237
+#: index.php:240
+#: index2.php:163
+msgid "Top 100-200 quotes"
+msgstr "Top 100-200"
+
+#: index.php:238
+msgid "Best quotations - top 100-200"
+msgstr ""
+
+#: index.php:239
+#: index2.php:164
+msgid "Top 100-200"
+msgstr ""
+
+#: index.php:249
+#: index.php:250
+#: index.php:265
+#: index.php:266
+#: index2.php:167
+#: index2.php:168
+#: index2.php:182
+#: index2.php:183
+msgid "Latest quotes"
+msgstr ""
+
+#: index.php:283
+msgid "Search"
+msgstr ""
+
+#: index.php:302
+#: index.php:303
+#: index2.php:196
+#: index2.php:197
+msgid "Quotation contributors"
+msgstr ""
+
+#: index.php:328
+#: index2.php:222
+msgid "Activate random quote"
+msgstr ""
+
+#: index.php:378
+msgid "Sorry, but the page was not found!"
+msgstr ""
+
+#: index.php:382
+#: index2.php:268
+#, php-format
+msgid "Page load took %s seconds."
+msgstr ""
+
+#: index2.php:150
+msgid "quotes, quotations"
+msgstr ""
+
+#: init.php:104
+msgid "quote quotes world translations"
+msgstr ""
+
+#: init.php:110
+msgid "QuoteBook24.com is best online source for quotes and quote translations"
+msgstr ""
+
+#: init.php:112
+msgid "Next generation online quotationsbook"
+msgstr ""
+
+#: init.php:116
+msgid "Tags"
+msgstr "Themen"
+
+#: init.php:117
+msgid "Authors"
+msgstr "Autoren"
+
+#: init.php:118
+msgid "Username"
+msgstr ""
+
+#: init.php:119
+msgid "Password"
+msgstr ""
+
+#: init.php:120
+msgid "stay_signed_in"
+msgstr ""
+
+#: init.php:121
+msgid "New here?"
+msgstr ""
+
+#: init.php:122
+msgid "User activity"
+msgstr ""
+
+#: init.php:123
+msgid "For nerds :)"
+msgstr ""
+
+#: init.php:128
+#: classes/detect_section.php:60
+msgid "sources"
+msgstr ""
+
+#: init.php:130
+msgid "About QuoteBook24.com "
+msgstr ""
+
+#: init.php:140
+msgid "quotes, quotations, world"
+msgstr ""
+
+#: init.php:142
+msgid "Click to zoom in"
+msgstr ""
+
+#: init.php:149
+#: classes/detect_section.php:80
+msgid "search"
+msgstr ""
+
+#: classes/author.php:179
+#: classes/author.php:184
+msgid "BC"
+msgstr ""
+
+#: classes/author.php:188
+msgid "AD"
+msgstr ""
+
+#: classes/author.php:195
+#: classes/author.php:203
+msgid "ca."
+msgstr ""
+
+#: classes/author.php:233
+msgid "a"
+msgstr ""
+
+#: classes/author.php:246
+msgid "an"
+msgstr ""
+
+#: classes/author.php:259
+#: classes/author.php:264
+msgid "was"
+msgstr "war"
+
+#: classes/author.php:268
+msgid "is"
+msgstr "ist"
+
+#: classes/detect_section.php:37
+#: classes/detect_section.php:89
+msgid "page"
+msgstr ""
+
+#: classes/detect_section.php:73
+msgid "top-100-quotes"
+msgstr "top-100-zitate"
+
+#: classes/detect_section.php:77
+msgid "top-100-200-quotes"
+msgstr "top-100-200-zitate"
+
+#: classes/detect_section.php:95
+msgid "contributors"
+msgstr ""
+
+#: classes/quote.php:226
+msgid "minute ago"
+msgstr ""
+
+#: classes/quote.php:230
+msgid "minutes ago"
+msgstr ""
+
+#: classes/quote.php:234
+#: classes/quote.php:238
+msgid "hours ago"
+msgstr ""
+
+#: classes/quote.php:341
+#: classes/quote.php:358
+msgid "ca"
+msgstr ""
+
+#: classes/quote.php:881
+msgid "You can only vote once for quotation!"
+msgstr ""
+
+#~ msgid "Tsitaat.com - Eesti parim online tsitaadikogu"
+#~ msgstr "QuoteBook24.com - Worlds best online quotebook"
+
+#~ msgid "tsitaadid"
+#~ msgstr "quotes"
+
+#~ msgid "teemad"
+#~ msgstr "tags"
+
+#~ msgid "viimati-lisatud-tsitaadid"
+#~ msgstr "latest-quotes"

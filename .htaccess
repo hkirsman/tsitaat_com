@@ -1,0 +1,51 @@
+#authtype basic
+#authgroupfile /dev/null
+#authuserfile /var/www/.private/.htpasswd
+#authname "Secure Area"
+#require user hannes
+
+#AddCharset UTF-8 .utf8 
+#AddDefaultCharset UTF-8
+
+RewriteEngine on
+
+
+### add slash sufix to tag dirs 
+#RewriteCond %{REQUEST_URI} ^/quotes/tags/[a-z-]{1}$
+#RewriteRule ^.*/(.*)$ http://zone.tsitaat.com/tsitaadid/teemad/$1/ [R=301,L]
+
+### add slash sufix to author dirs 
+##RewriteCond %{REQUEST_URI} ^/quotes/authors/[a-z-]{1}$
+##RewriteRule ^.*/(.*)$ http://zone.tsitaat.com/tsitaadid/autorid/$1/ [R=301,L]
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_URI} !^/foorum.*
+#RewriteCond %{REQUEST_URI} !^/forum.*
+#RewriteCond %{REQUEST_URI} !^/sitemap.xml
+#RewriteRule ^.* /index.php [L]
+
+#addhandler x-httpd-php5-cgi .txt
+#addhandler x-httpd-php5-cgi .xml
+
+#RewriteBase /
+
+#RewriteCond %{REQUEST_METHOD} !=POST
+#RewriteCond %{QUERY_STRING} !.*=.*
+#RewriteCond %{HTTP_COOKIE} ^.*(tsitaat_com_logged).*$
+#RewriteCond %{HTTP:Accept-Encoding} gzip
+#RewriteCond %{HTTP_USER_AGENT} !^.*(2.0\ MMP|240x320|400X240|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|Googlebot-Mobile|hiptop|IEMobile|KYOCERA/WX310K|LG/U990|MIDP-2.|MMEF20|MOT-V|NetFront|Newt|Nintendo\ Wii|Nitro|Nokia|Opera\ Mini|Palm|PlayStation\ Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|SHG-i900|Small|SonyEricsson|Symbian\ OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|webOS|Windows\ CE|WinWAP|YahooSeeker/M1A1-R2D2|iPhone|iPod|Android|BlackBerry9530|LG-TU915\ Obigo|LGE\ VX|webOS|Nokia5800).*
+#RewriteCond /data01/virt29621/domeenid/www.tsitaat.com/zone2.tsitaat.com/cache/supercache/%{HTTP_HOST}/$1/index.html -f
+##RewriteRule ^(.*) /cache/supercache/%{HTTP_HOST}/$1/index.html.gz [L]
+#RewriteRule ^(.*) /cache/supercache/%{HTTP_HOST}/$1/index.html [L]
+
+#RewriteCond %{REQUEST_METHOD} !=POST
+#RewriteCond %{QUERY_STRING} !.*=.*
+#RewriteCond %{QUERY_STRING} !.*attachment_id=.*
+##RewriteCond %{HTTP_COOKIE} !^.*(phpbb3_osiuo_sid|comment_author_|wordpress|wp-postpass_).*$
+#RewriteCond %{HTTP_USER_AGENT} !^.*(2.0\ MMP|240x320|400X240|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|Googlebot-Mobile|hiptop|IEMobile|KYOCERA/WX310K|LG/U990|MIDP-2.|MMEF20|MOT-V|NetFront|Newt|Nintendo\ Wii|Nitro|Nokia|Opera\ Mini|Palm|PlayStation\ Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|SHG-i900|Small|SonyEricsson|Symbian\ OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|webOS|Windows\ CE|WinWAP|YahooSeeker/M1A1-R2D2|iPhone|iPod|Android|BlackBerry9530|LG-TU915\ Obigo|LGE\ VX|webOS|Nokia5800).*
+#RewriteCond /data01/virt29621/domeenid/www.tsitaat.com/zone2.tsitaat.com/cache/supercache/%{HTTP_HOST}/$1/index.html -f
+#RewriteRule ^(.*) /cache/supercache/%{HTTP_HOST}/$1/index.html [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.* /index.php [L]

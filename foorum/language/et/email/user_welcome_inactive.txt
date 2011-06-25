@@ -1,0 +1,22 @@
+Subject: Tere tulemast "{SITENAME}" foorumitesse!
+
+{WELCOME_MSG}
+
+Palume seda e-kirja alles hoida. Sinu kasutaja andmed on järgnevad:
+
+----------------------------
+Kasutajanimi: {USERNAME}
+
+Foorumi URL: {U_BOARD}
+----------------------------
+Oma konto aktiveerimiseks vajuta allolevale lingile:
+
+{U_ACTIVATE}
+
+Palun ära oma unusta oma parooli; meie andmebaasis on see krüpteritud, sellest tulenevalt me ei saa sedu sulle soovi korral tagastada.
+
+Kui sa siiski unustada oma parooli, saad soovida uut parooli, mis aktiveeritakse samal moel nagu sinu kasutajagi.
+
+Täname registreerimast.
+
+{EMAIL_SIG}

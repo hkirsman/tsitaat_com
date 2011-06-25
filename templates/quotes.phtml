@@ -1,0 +1,73 @@
+<?php foreach ($quotes as $quote) { ?>
+<div class="quote q">
+  <div class="col1 lfloat">
+    <?php if ($section != "quotes-authors-%author%" && $section != "quotes-authors-%author%-%page%" && $section != "quotes-authors-%author%-%quote_id%") { ?>
+       <?php if (strlen($quote['author_name'])==0) { ?>
+  			<p>{==$quote['waiting_author_name']=} <a class="add_author" href="javascript:void(0)">Lisa autor</a></p>
+        <?php } else { ?>
+        <p><a href="/{==$labels['quotes_clean']=}/autorid/{==$quote['url_friendly_author_name']=}"><b>{==$quote['author_name']=}<?php if ($quote['author_born_death']) { ?>, {==$quote['author_born_death']=}<?php } ?></b></a></p>
+				<p class="fs10">{==$quote['author_profession_parsed']=}</p>
+      <?php } ?>
+		<?php } ?>
+    <?php if ($_context['section']!="quotes-authors-%author%-%quote_id%" && isset($quote['quotes_id'])) { ?>
+      <a class="quote" href="/{==$labels['quotes_clean']=}/autorid/{==$quote['url_friendly_author_name']=}/{==$quote['quotes_id']=}" rel="nofollow">
+    <?php } ?>
+      {==$quote['quote']=}
+    <?php if ($_context['section']!="quotes-authors-%author%-%quote_id%" && isset($quote['quotes_id'])) { ?>
+      </a>
+    <?php } ?>
+    sfsf
+  </div>
+  <a class="col2 lfloat"  href="/{==$labels['quotes_clean']=}/autorid/{==$quote['url_friendly_author_name']=}" title="" rel="nofollow" >
+    <?php if (strlen($quote['author_img']['nice_name'])==0) { ?>
+	  <img src="{==$baseurl_static2=}/img/noauthorimg.jpg" width="90" height="103" alt="" />
+    <?php } else { ?>
+    <img alt="" src="{==$baseurl_static2=}/cache/images/{==$quote['author_img']['nice_name_thumb']=}" width="90" height="{==$quote['author_img']['height_thumb']=}" />
+    <?php } ?>
+  </a>
+  <div class="col3 lfloat">
+		<?php if ($admin) { ?><span class="admin__edit_tags_{==$quote['quotes_id']=}"><?php } ?>Teemad<?php if ($admin) { ?></span><?php } ?>:&nbsp;
+		<?php if ($admin) { ?><span class="admin__tags"><?php } ?>{==$quote['tags_as_links']=}<?php if ($admin) { ?></span><?php } ?><br/>
+		<?php if ($admin) { ?><span class="admin__edit_category_{==$quote['quotes_id']=}"><?php } ?>Kategooriad<?php if ($admin) { ?></span><?php } ?>: {==$quote['category']=}<br/>
+		<?php if (isset($quote['rank'])) { ?>
+			<?php if ($_context['enable_voting']) { ?>Hääleta: <a class="vote noUnderline" href="javascript:void(0);" onclick="vote_for(this, {==$quote['quotes_id']=})">+</a> (<span class="current_rank">{==$quote['rank']=}</span>) <a class="vote noUnderline" href="JavaScript:void(0);" onclick="vote_against(this, {==$quote['quotes_id']=})">-</a><br/><?php } ?>
+	    <a class="share" href="javascript:void(0)" onclick="add_to_facebook({==$quote['quotes_id']=}, this);">Jaga FaceBookis</a>
+		<?php } ?><br />
+		Lisatud <a rel="nofollow" href="/{==$quote['username']=}">{==$quote['username']=}</a>
+	</div>
+</div>
+<?php } ?>
+
+
+<?php if ($section == "quotes-authors-%author%-%quote_id%") { ?>
+<div class="like">
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fdev.tsitaat.com%2Ftsitaadid%2Fautorid%2Ftoomas_hendrik_ilves%2F13977&amp;layout=standard&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe></div>
+
+<h2>Kommentaarid</h2>
+
+<form class="frm" action="/add_comment.php" method="post">
+  <input type="hidden" name="user_id" value="{==$user_id=}" />
+  <input type="hidden" name="quote_id" value="{==$a_path[3]=}" />
+  <input type="hidden" name="return" value="{==$current_url=}#commentlistEnd" />
+  
+  <div class="frmrow"><label class="textinput"><span class="frmcaption">Sinu nimi:</span><input <?php if ($user_id!=1) { ?>disabled="disabled" <?php } ?>type="text" name="username" value="<?php if ($user_id!=1) { ?>{==$username=}<?php } ?>" /></label></div>
+  <div class="frmrow"><label class="textarea"><span class="frmcaption">Kommentaar:</span><textarea cols="50" rows="6" name="comment"></textarea></label></div>
+  <div class="frmbuttons">
+    <button type="submit" class="button1"><span>Lisa</span></button>
+  </div>
+</form>
+
+<div class="commentlist">
+  <?php foreach ($comments as $comment) { ?>
+  <div class="comment">
+    <div class="user"><?php if ($comment['user_id']===1 && $comment['not_logged_username']=="") { ?>Anonüümne<?php } elseif($comment['user_id']>1) { ?><a href="/{==$comment['username_clean']=}">{==$comment['username']=}</a><?php } else { ?><span title="Registreerimata kasutaja">{==$comment['not_logged_username']=}</span><?php } ?></div>
+    <div class="content">{==$comment['comment_html']=}</div>
+    <div class="date">
+      {==$comment[datetime]=}
+    </div>
+  </div>
+  <?php } ?>
+  <a name="commentlistEnd"></a>
+</div>
+
+<?php } ?>

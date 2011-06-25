@@ -1,0 +1,14 @@
+
+Järgnev on e-kiri saadetud teile foorumi "{SITENAME}" administraatorilt. Kui see on spämm, sisaldab sõimu või muid solvavaid kommentaare, siis võta ühendust foorumi administraatoriga:
+
+{CONTACT_EMAIL}
+
+Pane kaasa täielik e-kiri (eriti päised). 
+
+Sulle saadetud sõnum on järgnev:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+{MESSAGE}
+
+
+{EMAIL_SIG}

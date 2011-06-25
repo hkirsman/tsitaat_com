@@ -1,0 +1,10 @@
+Subject: Ebaaktiivse kasutaja meeldetuletus
+
+Tere {USERNAME},
+
+See kiri on meeldetuletus sellest, et sinu konto "{SITENAME}" foorumites, registreerimiskuupäev{REGISTER_DATE}, on siiani aktiveerimata. Kui soovid praegu oma konto aktiveerida, saad seda teha alljärgneval lingil:
+{U_ACTIVATE}
+
+Täname registreerimast "{SITENAME}" foorumites, me ootame teie osalemist.
+
+{EMAIL_SIG}

@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{==$lang=}" lang="{==$lang=}"  xmlns:fb="http://www.facebook.com/2008/fbml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <?php if(!$robots_index) { ?>
+    <meta name="robots" content="noindex" />
+    <?php } ?>
+    <meta name="description" content="{==$description=}" />
+    <meta name="keywords" content="{==$keywords=}" />
+    <link rel="stylesheet" type="text/css" href="{==$baseurl_static=}/img/_style_screen_{==$locale=}<?php if($compress_css) { ?>_compress.php<?php } else { ?>.css<?php } ?>" media="screen, projection, print" title="" />
+    <?php if($logged) { ?>
+    <link rel="stylesheet" type="text/css" href="{==$baseurl_static=}/img/jquery-ui.css" media="screen, projection, print" title="" />
+    <?php } ?>    
+    <link rel="shortcut icon" type="image/ico" href="{==$baseurl_static=}/favicon.ico" />
+    <title>{==$title=}</title>
+  </head>

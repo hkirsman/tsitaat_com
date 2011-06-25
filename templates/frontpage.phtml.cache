@@ -1,0 +1,115 @@
+<?php    echo $_context['_engine']->import('templates/header.phtml', $_context); 
+echo '  <body>
+
+
+    <div id="h">
+    <a id="l" href="', $baseurl, '"></a>
+    <div id="s"></div>
+
+    <ul id="n">
+';       foreach ($nav as $item) { 
+echo '      <li><a href="', $item[link], '" '; if ($item['class']) { echo ' class="', $item['class'], '"'; } echo '>', $item[name], '</a></li>
+';			 } 
+echo '		</ul>
+	</div>
+
+	<div id="c">
+    
+    <div id="sc" class="lfloat">
+			
+
+      <ul class="i">
+				<li class="title">&laquo; ', $labels['tags'], ' &raquo;</li>
+';				 foreach ($tag_index as $item) { 
+           if($item == "-") { 
+echo '            <li><a href="', $baseurl, '/', $labels['quotes_clean'], '/teemad/-/" class="noUnderline'; if($item==utf8_substr($a_path[2],0,1) && $a_path[1]=="teemad") { echo ' active'; } echo '">-</a></li>
+';           } else { 
+echo '            <li><a '; if($item==utf8_substr($a_path[2],0,1) && $a_path[1]=="teemad") { echo 'class="active" '; } echo 'href="/', $labels['quotes_clean'], '/teemad/', $item, '/">', $item, '</a></li>
+';           } 
+				 } 
+echo '			</ul>
+
+      <ul class="i">
+				<li class="title">&laquo; Autorid &raquo;</li>
+';				 foreach ($author_index as $item) { 
+echo '          <li><a '; if(((strlen($a_path[2])>1&&$item==utf8_substr($a_path[2],utf8_strpos($a_path[2],"_"),1)) || (strlen($a_path[2])==1&&$item==utf8_substr($a_path[2],utf8_strpos($a_path[2],"_"),1))) && $a_path[1]=="autorid") { echo 'class="active" '; } echo 'href="/', $labels['quotes_clean'], '/autorid/', $item, '/">', $item, '</a></li>
+';				 } 
+echo '			</ul>
+
+';       if(!$logged) { 
+echo '      <div id="login">
+        <div class="title">&laquo; Login &raquo;</div>
+        <form method="post" action="/foorum/ucp.php?mode=login">
+          <div>
+            <input type="hidden" value="', $returnAddress, '" name="redirect" />
+            <input type="hidden" value="', $returnAddress, '" name="current_url" />
+          </div>
+          <div class="frmrow"><label class="textinputLogin"><span class="frmcaption">kasutaja:</span><span class="input"><input type="text" value="" name="username" /></span></label></div> 
+          <div class="frmrow"><label class="textinputLogin"><span class="frmcaption">parool:</span><span class="input"><input type="password" value="" name="password" /></span></label></div> 
+          <div class="frmrow">
+            <input type="checkbox" name="autologin"/> <label for="autologin"></label>
+          </div>
+          <div class="buttonsLogin">
+            <input type="submit" class="submit" value="Sign in" name="login"/>
+          </div>
+        </form>
+      </div>
+';       } else { 
+echo '      <div id="logimenu">
+        <div class="title">&laquo; Loginmenüü &raquo;</div>
+        <div class="item"><a class="item" href="/', $username_clean, '">Profiil</a></div>
+        <div class="item"><a class="item" href="">Lemmikud tsitaadid</a></div>
+        <div class="item"><a class="item" href="">Lemmikud allikad</a></div>
+        <div class="item"><a class="item" href="">Lisatud tsitaadid</a></div>
+        <div class="item"><a class="item" href="/index.php?mode=logout&amp;sid=', $session_id, '&amp;redirect=', $returnAddressEncoded, '">Logi välja</a></div>
+      </div>
+';       } 
+echo '
+		</div>
+
+    <div id="mc" class="lfloat2">
+    
+      <h1>', $h1, '</h1>
+			<span class="h1">'; if ($_context['section'] == "quotes-authors-%author%" || $_context['section'] == "quotes-authors-%author%-%page%" || $_context['section'] == "quotes-authors-%author%-%quote_id%") { echo '<a href="', $baseurl, '/', $labels['quotes_clean'], '/autorid/', $a_path[2], '">'; } echo $fake_h1; if ($_context['section'] == "quotes-authors-%author%" || $_context['section'] == "quotes-authors-%author%-%page%" || $_context['section'] == "quotes-authors-%author%-%quote_id%") { echo '</a>'; }  if (strlen($_context['profession'])>0) { echo '<span>', $profession, '</span>'; } echo '</span>
+
+      ', $content, '
+
+';       if ($section=="manage_not_active_quotations") { 
+echo '        
+';       } elseif ($section=="quotes-authors-%author_index%") { 
+         echo $_context['_engine']->import('templates/authors.phtml', $_context); 
+       } elseif ($section=="quotes-tags-%tag_index%" && $a_path[2]!="-") { 
+         echo $_context['_engine']->import('templates/tags.phtml', $_context); 
+       } elseif ($section=="fans") { 
+         echo $_context['_engine']->import('templates/fans.phtml', $_context); 
+       } else { 
+         echo $_context['_engine']->import('templates/quotes.phtml', $_context); 
+       } 
+echo '
+';       if($navi) { 
+echo '			<div id="navi">
+				
+';				 foreach ($navi as $item) { 
+           if($item['previous_page']) { 
+echo '            <a class="prev" href="', $item['link'], '">Eelmine</a>
+';           } elseif($item['next_page']) { 
+echo '            <a class="next" href="', $item['link'], '">Järgmine</a>
+';           } elseif($item['selected']) { 
+echo '          <a href="', $item['link'], '" class="item selected">', $item['caption'], '</a>
+';           } else { 
+echo '          <a href="', $item['link'], '" class="item">', $item['caption'], '</a>
+';           } 
+				 } 
+echo '				
+			</div>
+';			 } 
+echo '
+
+
+		</div>
+
+	</div>
+
+  <div class="clear"><!-- --></div>
+  
+'; echo $_context['_engine']->import('templates/footer.phtml', $_context);  ?>

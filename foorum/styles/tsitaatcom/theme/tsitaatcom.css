@@ -1,0 +1,112 @@
+/** 
+  * site:     www.tsitaat.com
+  * author:   Hannes
+  */
+
+/*****Header Reset*****/
+#header div, #header span, #header applet, #header object, #header iframe,
+#header h1, #header h2, #header h3, #header h4, #header h5, #header h6, #header p, #header blockquote, #header pre,
+#header a, #header abbr, #header acronym, #header address, #header big, #header cite, #header code,
+#header del, #header dfn, #header em, #header font, #header img, #header ins, #header kbd, #header q, #header s, #header samp,
+#header small, #header strike, #header strong, #header sub, #header sup, #header tt, #header var,
+#header b, #header u, #header i, #header center,
+#header dl, #header dt, #header dd, #header ol, #header ul, #header li,
+#header fieldset, #header form, #header label, #header legend,
+#header table, #header caption, #header tbody, #header tfoot, #header thead, #header tr, #header th, #header td {
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-family: Georgia,Verdana,Helvetica,sans-serif !important;
+	line-height: 15px !important; }
+#header ol, #header ul { list-style: none; }
+#header blockquote, #header q { quotes: none; }
+/* remember to define focus styles! */
+#header :focus { outline: 0; }
+/* remember to highlight inserts somehow! */
+#header ins { text-decoration: none; }
+#header del { text-decoration: line-through; }
+/* tables still need 'cellspacing="0"' in the markup */
+#header table { border-collapse: collapse;	border-spacing: 0; }
+
+/*****Basic Layout*****/  
+#header {
+	background: url(/themes/basic/img/header.gif) no-repeat left 10px;
+	margin: 0 auto;
+	width: 930px;
+	height: 170px;
+}
+#content {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	width: 910px;
+}
+#left_pane {
+	font-size: 12px;
+	line-height: 14px;
+	vertical-align: top;
+	width: 200px; }
+#right_pane { vertical-align: top; padding-top: 14px; }
+#footer { width: 910px; margin: 0 auto; }
+
+/*****Header*****/  
+#header a.logo { display: block; height: 90px; width: 200px; }
+#header .search { float: right; margin: 0 9px 0 0; padding: 0; font-size: 14px;}
+#header .search input.text {
+	cursor: text;
+	font-family: Georgia,Verdana,Helvetica,sans-serif !important;
+	font-size: 14px;
+	padding: 0 3px;
+	width: 300px;
+}
+#header .search input.submit {
+		font-family: Georgia,Verdana,Helvetica,sans-serif !important;
+		font-size: 14x;
+		padding: 0 3px }
+#header  .site_description { color:#CCCCCC; font-size:16px; padding: 8px 0 0 10px; }
+
+/*****Content*****/  
+#header .alphabet { clear: left; margin-left: 10px; }
+#header .alphabet li { float: left; font-size: 12px;margin-top: 10px; }
+#header .alphabet a {
+	border: 1px solid #E9E9E9;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+	display: block;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	margin-right: 3px;
+	padding: 4px 4px;
+	text-align: center;
+	text-decoration: none;
+	width: 17px;
+}
+#header .alphabet a.sel {
+	background: none;
+	background: #3D8E9E;
+	border: 1px solid #3D8E9E;
+	color: white ! important; }
+#header .alphabet a:hover { background: #E9E9E9;
+	border: 1px solid #E9E9E9;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	color: #006A80 ! important; }
+#header .alphabet a:visited { color: #006A80; }
+.alphabet .caption { margin: 16px 7px 0 0; font-weight: bold; }
+
+#header .mainmenu {  float: left; margin-top: 19px; margin-left: 10px; width: 700px; }
+#header .mainmenu li { float: left;margin-bottom: 10px;margin-top: 6px; }
+#header .mainmenu li.sel a { font-weight: bold; }
+#header .mainmenu a { color: #006A80;
+	display: block;
+	font-size: 12px;
+	font-family: Verdana !important;
+	text-decoration: none;
+	margin-right: 17px; }
+#header .mainmenu a:hover { text-decoration: underline; }
+
+#page-header { margin-top: 10px; }

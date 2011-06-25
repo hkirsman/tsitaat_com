@@ -1,0 +1,10 @@
+Subject: Sa oled soovitud gruppi vastu võetud
+
+Õnnitleme,
+
+Sa oled "{GROUP_NAME}" gruppi "{SITENAME}" foorumites vastu võetud.
+Vajuta järgnevale lingile, et näha grupi liikmestaatust.
+
+{U_GROUP}
+
+{EMAIL_SIG}

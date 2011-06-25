@@ -1,0 +1,10 @@
+<div class="authorlist">
+<div class="col">
+<?php foreach ($authors_list as $author) { ?>
+    <a href="{==$baseurl=}/tsitaadid/autorid/{==$author['url_friendly_author_name']=}">{==$author['author_name']=}</a>
+    <?php if( $author['author_born_death']) { ?>
+    ({==$author['author_born_death']=})
+    <?php } ?><br />
+<?php } ?>
+</div>
+</div>
